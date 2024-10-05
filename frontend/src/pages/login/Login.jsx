@@ -3,7 +3,7 @@ import useAuthContext from "../../hooks/useAuthContext";
 import { useState } from "react";
 import useLogin from "../../hooks/useLogin";
 
-export default function Login() {
+export default function LoginPage() {
   const { authUser } = useAuthContext();
   const { loading, login } = useLogin();
   const [loginData, setLoginData] = useState({

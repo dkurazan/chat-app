@@ -1,10 +1,10 @@
+import { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import GenderPicker from "../../components/GenderPicker";
-import { useState } from "react";
 import useSignUp from "../../hooks/useSignup";
 import useAuthContext from "../../hooks/useAuthContext";
 
-export default function Signup() {
+export default function SignUpPage() {
   const [inputs, setInputs] = useState({
     fullName: "",
     username: "",

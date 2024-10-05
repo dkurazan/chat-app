@@ -3,7 +3,7 @@ import MessengerContainer from "../../components/messenger/MessengerContainer";
 import Sidebar from "../../components/sidebar/Sidebar";
 import useAuthContext from "../../hooks/useAuthContext";
 
-export default function Home() {
+export default function HomePage() {
   const { authUser } = useAuthContext();
 
   if (!authUser) {

@@ -2,10 +2,10 @@ import AuthContextProvider from "./context/AuthContext";
 import { SocketContextProvider } from "./context/SocketContext";
 import { Toaster } from "react-hot-toast";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/home/Home";
-import Login from "./pages/login/Login";
-import Signup from "./pages/signup/Signup";
 import App from "./App";
+import HomePage from "./pages/home/Home";
+import LoginPage from "./pages/login/Login";
+import SignUpPage from "./pages/signup/Signup";
 
 const router = createBrowserRouter([
   {
@@ -14,15 +14,15 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <HomePage />,
       },
       {
         path: "login",
-        element: <Login />,
+        element: <LoginPage />,
       },
       {
         path: "signup",
-        element: <Signup />,
+        element: <SignUpPage />,
       },
     ],
   },
