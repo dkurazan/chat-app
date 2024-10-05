@@ -1,12 +1,9 @@
-import Home from "./pages/home/Home";
-// import SignUp from "./pages/signup/SignUp";
+import { Outlet } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
-    <div className="p-4 h-screen flex items-center justify-center">
-      <Home />
-    </div>
+    <main className="p-4 h-screen flex items-center justify-center">
+      <Outlet />
+    </main>
   );
 }
-
-export default App;

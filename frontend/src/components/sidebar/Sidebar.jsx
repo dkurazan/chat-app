@@ -10,5 +10,5 @@ export default function Sidebar() {
       <Conversations />
       <LogoutButton />
     </div>
-  )
+  );
 }
