@@ -4,7 +4,7 @@ import { useState } from "react";
 import useSignUp from "../../hooks/useSignup";
 import useAuthContext from "../../hooks/useAuthContext";
 
-export default function SignUp() {
+export default function Signup() {
   const [inputs, setInputs] = useState({
     fullName: "",
     username: "",
