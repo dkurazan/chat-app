@@ -4,6 +4,8 @@ import io from "socket.io-client";
 
 export const SocketContext = createContext();
 
+const url = window.location.origin;
+
 export const SocketContextProvider = ({ children }) => {
 	const [socket, setSocket] = useState(null);
 	const [onlineUsers, setOnlineUsers] = useState([]);
@@ -11,7 +13,7 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		if (authUser) {
-			const socket = io("http://localhost:5000", {
+			const socket = io(url, {
 				query: {
 					userId: authUser._id,
 				},
