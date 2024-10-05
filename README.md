@@ -14,7 +14,7 @@ A chat application implemented using following technologies:
 # Live Demo
 
 Check out the live demo at
-[*](*)
+[https://chat-app-rkpv.onrender.com/](https://chat-app-rkpv.onrender.com/)
 
 ## Requirements
 
