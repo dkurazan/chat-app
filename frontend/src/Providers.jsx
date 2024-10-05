@@ -3,9 +3,9 @@ import { SocketContextProvider } from "./context/SocketContext";
 import { Toaster } from "react-hot-toast";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import HomePage from "./pages/home/Home";
-import LoginPage from "./pages/login/Login";
-import SignUpPage from "./pages/signup/Signup";
+import HomePage from "./pages/home/HomePage";
+import LoginPage from "./pages/login/LoginPage";
+import SignUpPage from "./pages/signup/SignUpPage";
 
 const router = createBrowserRouter([
   {
